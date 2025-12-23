@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT 对话区分助手",
+  "version": "1.0",
+  "description": "给ChatGPT对话添加红绿边框，并显示对话轮次。",
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}

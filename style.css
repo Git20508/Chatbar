@@ -1,0 +1,41 @@
+/* 用户提问的样式（红框） */
+article.my-user-msg {
+    border: 2px solid #ffcccc !important; /* 浅红边框 */
+    border-left: 8px solid #ff4d4d !important; /* 左侧加粗红条 */
+    background-color: rgba(255, 0, 0, 0.02) !important; /* 极淡的红色背景 */
+    border-radius: 8px !important;
+    margin-bottom: 10px !important;
+    padding: 10px !important;
+    position: relative; /* 为了定位序号 */
+}
+
+/* ChatGPT 回答的样式（绿框） */
+article.my-ai-msg {
+    border: 2px solid #ccffcc !important; /* 浅绿边框 */
+    border-left: 8px solid #00cc66 !important; /* 左侧加粗绿条 */
+    background-color: rgba(0, 255, 0, 0.02) !important; /* 极淡的绿色背景 */
+    border-radius: 8px !important;
+    margin-bottom: 30px !important; /* 回答后面空隙大一点，区分下一组 */
+    padding: 10px !important;
+}
+
+/* 对话轮次的小标签 */
+.turn-counter-label {
+    position: absolute;
+    top: -25px; /* 放到框的外面上方 */
+    left: 0;
+    background-color: #666;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* 稍微调整一下原有布局，防止遮挡 */
+article {
+    margin-top: 25px !important; 
+    transition: all 0.3s ease;
+}
